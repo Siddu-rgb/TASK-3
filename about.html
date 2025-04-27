@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dynamic Fun Zone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎉 Dynamic Fun Zone 🎉</h1>
+      <p id="tagline">Spin. Laugh. Repeat.</p>
+    </header>
+
+    <section class="carousel">
+      <img id="carousel-image" src="https://picsum.photos/seed/1/400/250" alt="Fun Image">
+      <button class="action-btn" onclick="nextImage()">Next Image</button>
+    </section>
+
+    <section class="joke-section">
+      <h2>😂 Ready for a Joke?</h2>
+      <button class="action-btn" onclick="fetchJoke()">Tell Me!</button>
+      <div id="loading-spinner" class="hidden"></div>
+      <p id="joke-text">Click "Tell Me!" to burst out laughing!</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
